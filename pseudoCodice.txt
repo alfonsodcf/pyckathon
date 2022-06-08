@@ -1,0 +1,24 @@
+Importare librerie
+Creare lista di parole
+Generare numero casuale tramite libreria random
+Definire variabile parola pescandola dall'array tramite numero casuale
+Trasformare parola in una lista di lettere che la compongono
+Creare variabile vuota dei lettere_user
+Creare variabile vuota lettereindovinate delle lettere giuste
+Decidere quanti tentativi sono disponibili (5)
+Creare variabile errori = 0 (contatore)
+Per ogni lettera di parola stampo "" in <p id="word"></p>
+Creo funzione checkLetters {
+Prendo lettera_user = il valore di user-letter in minuscolo
+Lo pusho in lettere_user
+Controllo se è presente in parola
+Se è presente: Lo pusho in lettere_indovinate,  faccio un ciclo for con i=0, i < parola.length, i++
+                        Se parola[i] = lettera_user stampo letterauser
+                        Else Stampo ""
+Else: tentivi = tentativi - 1, ristampo contatore tentativi
+ristampo le lettere_user
+Controllo se il contenuto di <p id="word"></p> = parola
+Disabilito bottone add-letter-btn e stampo messaggio "Hai Vinto!"
+Else if Controllo se tentativi == 0
+Se == 0: Disabilito bottone add-letter-btn e stampo messaggio "Hai Perso!"
+}
